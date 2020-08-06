@@ -5,6 +5,9 @@ void main() {
   runApp(MyApp());
 }
 
+// This is the application entry point. Notice that, for its first
+// home page, it actually inflates the "Welcome Page". All of the logic
+// exists inside of the Welcome Page for now.
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
