@@ -19,6 +19,10 @@ and run the project and deploy it to a test emulator device. Follow the instruct
 4. Once you deployed the application, you are ready to get started. For Lesson 1, [we will
 be trying to build the first 2 screens of the design attached in this Figma](https://www.figma.com/file/B7teCnqt3GHEqau2v4wM3Q/Taskly-Sample-Note-Flutter-Learning-Project).
 
+5. There are two examples that you can play around with:
+- Look at lib/main.dart. Comment out line 35, and enable line 36 to see examples of rows and columns being used in better detail.
+- The WelcomPage example is just a counter example for you to play around with. 
+
 ## Useful resources below:
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)

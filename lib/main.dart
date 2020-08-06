@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterflies_learning/widgets/row_column_example.dart';
 import 'package:flutterflies_learning/widgets/welcome_page.dart';
 
 void main() {
@@ -30,7 +31,9 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: WelcomePage(title: 'Flutter Demo Home Page'),
+// TODO: Column out RowColumnExample or WelcomePage instead
+      home: CounterPage(title: 'Counter Example'),
+//      home: RowColumnExample(),
     );
   }
 }

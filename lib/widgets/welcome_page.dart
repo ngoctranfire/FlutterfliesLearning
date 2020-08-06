@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 /// One is to increment and one to decrement the counter.
 /// It is generally a good idea to separate your widgets out into components
 /// so that they are extracted out into easily traceable components.
-class WelcomePage extends StatefulWidget {
-  WelcomePage({Key key, this.title}) : super(key: key);
+class CounterPage extends StatefulWidget {
+  CounterPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _WelcomePageState createState() => _WelcomePageState();
+  _CounterPageState createState() => _CounterPageState();
 }
 
-class _WelcomePageState extends State<WelcomePage> {
+class _CounterPageState extends State<CounterPage> {
   int _counter = 0;
 
   void _incrementCounter() {
