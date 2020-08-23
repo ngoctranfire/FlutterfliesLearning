@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "995700315456",
+    "firebase_url": "https://flutterflies-learning-sample.firebaseio.com",
+    "project_id": "flutterflies-learning-sample",
+    "storage_bucket": "flutterflies-learning-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995700315456:android:a06716e2e3c7816d5156a5",
+        "android_client_info": {
+          "package_name": "media.identity.com.flutterflies_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995700315456-o3j02oq8u6u3orvhfkenkt2jienubo08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "media.identity.com.flutterflies_learning",
+            "certificate_hash": "0cdcc0876e282f16be2d980aade8ad51c339301c"
+          }
+        },
+        {
+          "client_id": "995700315456-jhorvk80uaemrpu0g1i1jo5ptp38c62m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSX_bPx-nboWFLaYlQg0jfosWqbhgE7ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995700315456-jhorvk80uaemrpu0g1i1jo5ptp38c62m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

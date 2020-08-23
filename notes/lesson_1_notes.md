@@ -1,4 +1,4 @@
-# Lesson 1 Notes
+# Lesson 1 Notes: Building Basic UI Screens
 
 ## Download assets
 1. First, you will need to go to the [figma](https://www.figma.com/file/B7teCnqt3GHEqau2v4wM3Q/Taskly-Sample-Note-Flutter-Learning-Project?node-id=5%3A157]).
