@@ -18,8 +18,8 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
           /* The sized box is to help us space items */
-          SizedBox(
-            height: 33,
+          const SizedBox(
+            height: 24,
           ),
           Text(
             _welcomeScreenLocalizations.appNameTitle(),
@@ -31,7 +31,7 @@ class WelcomeScreen extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
 
@@ -47,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           /* Rich text helps us to display text with multiple styles */
@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
             child: RichText(
               text: TextSpan(
                 text: _welcomeScreenLocalizations.taskMadeText(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.normal,
                   color: Colors.black,
@@ -63,7 +63,7 @@ class WelcomeScreen extends StatelessWidget {
                 children: <TextSpan>[
                   TextSpan(
                       text: ' ${_welcomeScreenLocalizations.forPeopleText()}',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       )),
@@ -71,22 +71,23 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           Center(
             child: Text(
               _welcomeScreenLocalizations.byPeopleText(),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 48,
           ),
+          // Other ways to write buttons.
           FlatButton(
             color: Colors.transparent,
             child: Container(

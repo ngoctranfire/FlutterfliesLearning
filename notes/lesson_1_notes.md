@@ -22,3 +22,7 @@ hot reload will not pick up new assets that were not included in pubspec.yaml.
  ## Building the Welcome Page
  1. First, we know that we both have a common TransparentAppBarPage that is used by both pages. Pay attention that we created a component called TransparentAppBarPage, which includes a Page Title and also makes the App Bar Transparent. In addition, we also make sure to pass in a body (which is the components laying the rest of the screen as a child).    
  2. Please take a look at the welcome_screen and the sign_in_screen. There are attached comments that are attached with the page that should explain each and every step. Please ask any questions or ping me if you need further follow-up.
+
+
+## Flutter Routing
+1. 

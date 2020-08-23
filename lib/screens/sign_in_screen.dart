@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterflies_learning/screens/common/transparent_app_bar_page.dart';
+import 'package:flutterflies_learning/screens/input/taskly_text_input.dart';
 import 'package:flutterflies_learning/screens/localizations/sign_in_screen_localizations.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -40,82 +41,40 @@ class _SignInScreenState extends State<SignInScreen> {
             SizedBox(
               height: 40,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  _localizations.emailText(),
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: const Color(0xFF8F92A1),
-                  ),
+            TasklyTextInput(
+              label: _localizations.emailText(),
+              keyboardType: TextInputType.emailAddress,
+              prefixIcon: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 8, 24, 0),
+                child: Icon(
+                  Icons.person,
+                  color: Colors.black,
+                  size: 24,
                 ),
-                TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),
-                  decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    contentPadding: EdgeInsets.only(top: 20),
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 8, 24, 0),
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.black,
-                        size: 24,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
             SizedBox(
               height: 40,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  _localizations.passwordText(),
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: const Color(0xFF8F92A1),
-                  ),
+            TasklyTextInput(
+              label: _localizations.passwordText(),
+              keyboardType: TextInputType.visiblePassword,
+              prefixIcon: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 8, 24, 0),
+                child: Icon(
+                  Icons.lock_open,
+                  color: Colors.black,
+                  size: 24,
                 ),
-                TextField(
-                  keyboardType: TextInputType.visiblePassword,
-                  obscureText: true,
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),
-
-                  /// notice that we create an InputDecoration and decorate it
-                  /// so that it fits what we had int he design.
-                  decoration: InputDecoration(
-                      border: UnderlineInputBorder(),
-                      contentPadding: EdgeInsets.only(top: 20),
-                      prefixIcon: Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 8, 24, 0),
-                        child: Icon(
-                          Icons.lock_open,
-                          color: Colors.black,
-                          size: 24,
-                        ),
-                      ),
-                      suffixIcon: Padding(
-                        padding: const EdgeInsets.fromLTRB(24, 8, 0, 0),
-                        child: Icon(
-                          Icons.remove_red_eye,
-                          color: Colors.black,
-                          size: 24,
-                        ),
-                      )),
-                  onChanged: (final String newText) {
-                    print("Password=$newText");
-                  },
+              ),
+              suffixIcon: Padding(
+                padding: const EdgeInsets.fromLTRB(24, 8, 0, 0),
+                child: Icon(
+                  Icons.remove_red_eye,
+                  color: Colors.black,
+                  size: 24,
                 ),
-              ],
+              ),
             ),
             SizedBox(
               height: 48,
